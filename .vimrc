@@ -15,3 +15,10 @@ map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
+
+" Cursor highlights
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=steelblue
+
+" remap esc to jk 
+inoremap jk <ESC>
