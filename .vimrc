@@ -20,5 +20,6 @@ map <C-t><right> :tabn<cr>
 highlight Cursor guifg=white guibg=black
 highlight iCursor guifg=white guibg=steelblue
 
-" remap esc to jk 
 inoremap jk <ESC>
+
+noremap <space> :
