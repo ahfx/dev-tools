@@ -1,23 +1,23 @@
 #!/usr/bin/python
 
 """ 
-    check for missing frames at a glance by
-    print out complete sequences of frames 
+    This is a convience script to check for missing frames at a glance
+    usage: ./seqls pathtoframes
 """
 
 import sys
 import glob
 
 def seqls():
-    
-    
+   
+    #check if arguments are passed, otherwise use current dir 
     if (len(sys.argv) > 1): filepath = sys.argv[1]
     else: filepath = '.' 
     
-    i = 99999;
+    i = 99999; 
     j = -1;
     
-    #match path/name.####.ext
+    #glob path/name.####.ext
     filesglob = glob.glob('{}/*.[0-9]*.*'.format(filepath))
     filesglob.sort()
     file = {'path':'','name':'','frame':'','ext':''} 
@@ -35,14 +35,14 @@ def seqls():
         
         frame = file['frame']
         
-        if (frame < i): i = frame #condition to catch first frame
-        if (frame == j+1): j = frame
-        
         if (frame > j+1): 
-            print '{name}.[{start:04d}-{end:04d}].{ext}'.format(start=i,end=j,**file)
+            print '{name}.[{s:04d}-{e:04d}].{ext}'.format(s=i,e=j,**file)
             i = j = frame
-
-    print '{name}.[{start:04d}-{end:04d}].{ext}'.format(start=i,end=j,**file)
+        else: 
+            j = frame
+            if (frame < i): i = frame #condition to catch first frame
     
-if __name__ == "__main__":
-    seqls()
+    
+    print '{name}.[{s:04d}-{e:04d}].{ext}'.format(s=i,e=j,**file)
+    
+if __name__ == "__main__": seqls()
