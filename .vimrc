@@ -8,7 +8,7 @@ set expandtab
 set shiftwidth=4
 
 " display line numbers
-set number 
+set number
 
 " Tab Navigation, ctrl+t then arrow (not at the same time)
 map <C-t><up> :tabr<cr>
