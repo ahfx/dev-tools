@@ -1,0 +1,3 @@
+sublime() {
+	"$SUBLIME_EXE"
+}
