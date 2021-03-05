@@ -9,7 +9,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	#source ~/adh-prefs/.bash_aliases_mac
 	echo "macos"
 elif [[ -n "$WINDIR" ]]; then
-	#source ~/ahrc/.bash_aliases_windows
-	echo "windows"
+	cd ./windows/bash && source ./setup.sh && cd $dir
 fi
 

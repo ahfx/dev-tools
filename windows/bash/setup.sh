@@ -1,9 +1,4 @@
-
-home=~
-dir=${home}/ahrc/bash/windows
-
-source ${dir}/env.sh
-
-${dir}/bin/ln.sh ${dir}/.bash_profile ${home}/.bash_profile
-${dir}/bin/ln.sh ${dir}/.bashrc ${home}/.bashrc
-${dir}/bin/ln.sh ${dir}/.bash_aliases ${home}/.bash_aliases
+$(pwd)/bin/ln.sh $(pwd)/.bash_profile ~/.bash_profile
+$(pwd)/bin/ln.sh $(pwd)/.bashrc ~/.bashrc
+$(pwd)/bin/ln.sh $(pwd)/.bash_aliases ~/.bash_aliases
+$(pwd)/bin/ln.sh $(pwd)/env.sh ~/env.sh
