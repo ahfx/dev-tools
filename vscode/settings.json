@@ -1,0 +1,104 @@
+{
+    "update.mode": "none",
+    "tabnine.experimentalAutoImports": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "editor.quickSuggestionsDelay": 100,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "hediet.vscode-drawio.customColorSchemes": [
+
+    ],
+
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "flake8.args": [
+        "--max-line-length=120",
+        "--ignore=E203,E221,E501",
+    ],
+
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "viceroy.config.lastVersion": "0.52.201573",
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "files.exclude": {
+        ".viceroy": true,
+        "apollo-overrides": true,
+        "release-info": true,
+        "src/*/build": false,
+        "build": false,
+        "env": true,
+        "packageInfo*": true,
+        ".bemol": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "search.exclude": {
+        "env": true,
+        "src/*/build": true,
+        "build": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+    "[brazilPackageConfig]": {
+        "workbench.editor.languageDetection": false
+    },
+    "viceroy.config.internal.lastUpdateTime": "2024-03-06T19:05:40.080Z",
+    "remote.SSH.configFile": "/Users/adharder/.ssh/config",
+    "remote.SSH.remoteServerListenOnSocket": true,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.remotePlatform": {
+        "dev-dsk-adharder-2b-589e8d81.us-west-2.amazon.com": "linux"
+    },
+    "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
+    "files.associations": {
+        "*.mpd": "xml",
+        "*.m3u8": "csv",
+        "*.html": "jinja-html"
+    },
+    "viceroy.doc.welcome.showAtStartup": false,
+    "viceroy.workspaceSyncStrategy": "automatic",
+    "java.debug.settings.showQualifiedNames": false,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/mybc/packages/**/*.jar"
+    ],
+    "debug.autoExpandLazyVariables": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": -1,
+    "aws.suppressPrompts": {
+        "codeWhispererNewWelcomeMessage": true
+    },
+    "window.restoreWindows": "none",
+    "diffEditor.maxComputationTime": 0,
+    "java.import.generatesMetadataFilesAtProjectRoot": true,
+    "viceroy.config.setUpCodeWhisperer": false
+}

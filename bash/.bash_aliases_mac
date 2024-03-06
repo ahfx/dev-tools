@@ -1,0 +1,30 @@
+function ls_amazon_brew_tap() {
+  TAP=amazon/homebrew-amazon; \
+  TAP_PREFIX=$(brew --prefix)/Homebrew/Library/Taps; \
+  ls $TAP_PREFIX/$TAP/Formula/*.rb 2>/dev/null || ls $TAP_PREFIX/$TAP/*.rb 2>/dev/null | \
+  xargs -I{} basename {} .rbI
+
+}
+
+# Day to Day amzn
+alias a='kinit -f && mwinit -s'
+
+# Dev
+alias bb='brazil-build'
+alias bb-recurse='brazil-recursive-cmd --allPackages brazil-build'
+
+# list the size of files in the current directory
+alias sizes="du -hs * | sort -h"
+
+# CQ
+alias get-encoding-platfrom-prod-creds="ada credentials update --account=354800348205 --provider=conduit --role=EncodingTeamRW --once"
+
+# Cloud Dev Desktop
+alias ssh_cd='ssh dev-dsk-adharder-2b-589e8d81.us-west-2.amazon.com'
+function scp_to_cd() {
+  scp "$1" "dev-dsk-adharder-2b-589e8d81.us-west-2.amazon.com:/home/adharder/scp/$1"
+}
+
+function uvsappcfg () {
+     ~/tools/AVIPAUserScripts/G2S2ConfigManager.sh "$@"
+}
